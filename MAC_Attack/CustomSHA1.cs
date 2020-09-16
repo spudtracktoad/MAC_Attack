@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,7 +12,16 @@ namespace MAC_Attack
         private const uint MESSAGESIZE = 2 ^ 64;  //in Bits
         private const uint BLOCKSIZE = 512;  //in Bits
         private const uint WORDSIZE = 32;  //in Bits
+        private readonly uint[] K = { 0x5a827999, 0x6ed9eba1, 0x8f1bbcdc, 0xca62c1d6 };
 
+        public uint[] Hash(string input)
+        {
+            uint[] result = new uint[5];
+
+
+
+            return result;
+        }
 
         /// <summary>
         /// The rotate Left (circular Left shift) operation, where x is a w-bit word
