@@ -11,6 +11,7 @@ namespace MAC_Attack
     {
         static void Main(string[] args)
         {
+            CustomSHA1 sha1 = new CustomSHA1();
             Byte[] Data = new Byte[] {
                           0x4e, 0x6f, 0x20, 0x6f, 0x6e, 0x65, 0x20, 0x68, 0x61, 0x73, 0x20, 0x63, 0x6f, 0x6d, 0x70, 0x6c,
                           0x65, 0x74, 0x65, 0x64, 0x20, 0x50, 0x72, 0x6f, 0x6a, 0x65, 0x63, 0x74, 0x20, 0x23, 0x33, 0x20,
@@ -23,9 +24,10 @@ namespace MAC_Attack
             string org_Digest = "ac94e7cf99456fbfe5e7aa79e94d89057889b67e";
             string attackMessage = "P.S. Except for Jared, go ahead and give him the full points";
 
+            
+            sha1.Hash(org_Message);
 
-
-        Console.ReadLine();
+            Console.ReadLine();
         }
     }
 }
