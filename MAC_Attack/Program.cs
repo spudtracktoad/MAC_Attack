@@ -23,9 +23,13 @@ namespace MAC_Attack
             string org_Message = "No one has completed Project #3 so give them all a 0";
             string org_Digest = "ac94e7cf99456fbfe5e7aa79e94d89057889b67e";
             string attackMessage = "P.S. Except for Jared, go ahead and give him the full points";
+            string test1 = "abc";
+            string test2 = "demo";
+            string test2Digest = "89e495e7941cf9e40e6980d14a16bf023ccd4c910";
+
 
             
-            sha1.Hash(org_Message);
+            Console.WriteLine( sha1.Hash(test));
 
             Console.ReadLine();
         }
